@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>checking test api</title>
+    </head>
+    <body>
+        
+        <section>
+            <h1>what does your personality say about yourseld</h1>
+            <div class="centerDiv">
+                <div class="details">
+                    <label>enter your name</label>
+                    <input type="text" id="nameid">
+                </div>
+                    <br> <br>
+                <div class="imgdiv">
+                    <img src="mario.jfif" alt="mario image" width="200" height="200" id="imgchange"> 
+                </div>
+                <button onclick="imageChange()">click it for change</button>
+ 
+            </div>
+        </section>
+
+        <script>
+        function imageChange(){
+            const a;
+            
+            const x=document.getElementById("nameid").value;
+            document.getElementById("imgchange").src=`https://joeschmoe.io/api/v1/${x}`;
+        }
+        </script>
+    </body>
+</html>
